@@ -29,12 +29,24 @@
 
 </head>
 <body>
+
+     <!-- Multi Language Box -->
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand ml-3" href="#"><img src="/Images/BG-Images/logo.png"  height="40" width=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-burger fa-bounce fa-lg" style="color: #dc3545;"></i>
+            <i class="fa-solid fa-bars-staggered fa-bounce fa-xl" style="color: #dc3545;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
@@ -68,7 +80,7 @@
        <div class="portfolio-banner">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 ">
               <img src="./Images/BG-Images/Profile-Image.png" alt="Profile Image" class="profile-image">
 
               <div class="banner-content">
@@ -125,7 +137,7 @@
           <div class="container-fluid row">
           <div class="col-lg-5 offset-lg-1 mb-3">
             <h2 class="">About Me</h2>
-            <p id="paragraph">Hello there! I'm [Your Name], a [Your Profession] who is deeply passionate about [Your Interests]. With a background in [Your Background], I bring [Your Unique Selling Point]. My journey is defined by [Key Experiences] and a commitment to [Your Values]. Through my portfolio, you'll witness a fusion of creativity and expertise in [Your Skills]. Let's embark on a transformative journey together and make an impact. Excited to connect and explore opportunities with you!</p>
+            <p id="paragraph">Hello there! I'm <span class="myself">Raj Kumar</span> , very passionate about Network & System Administration.</span> With a background in Advance Diploma In IT Networking & Cloud Computing . Through my portfolio, you'll witness a fusion of creativity and expertise in <span class="myself">Windows Server , Cisco Packet Tracer , Linux </span> etc. Let's embark on a transformative journey together and make an impact. Excited to connect and explore opportunities with you!</p>
               </div>
               <div class="col-lg-5 offset-lg-1 mb-5">
                 <img class="img img-fluid" src="/Images/BG-Images/code.gif">
@@ -151,7 +163,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="skill-name">Data Analytics</div>
+                  <div class="skill-name">Data Analysis</div>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 70%;color:#fff;font-weight:bold;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                   </div>
@@ -188,29 +200,25 @@
               <div class="col-md-4">
                   <div class="card">
                       <img src="/Images/Project-Images/ExcelProject-1.png" alt="Project 1">
-                      <h4>Excel Data Analysis</h4>
-                      <p>Click To Check</p>
+                      <h4 align="center">Excel Data Analysis</h4>
                   </div>
               </div>
               <div class="col-md-4">
                   <div class="card">
                       <img src="/Images/Project-Images/PortfolioProject-1.jpg" alt="Project 1">
-                      <h4>Portfolio Website</h4>
-                      <p>Click To Check</p>
+                      <h4 align="center">Portfolio Website</h4>
                   </div>
               </div>
               <div class="col-md-4">
                   <div class="card">
                       <img src="/Images/Project-Images/Website-2.jpg" alt="Project 1">
-                      <h4>Ecommerce Site</h4>
-                      <p>Click To Check</p>
+                      <h4 align="center">Ecommerce Site</h4>
                   </div>
               </div>
               <div class="col-md-4">
                   <div class="card">
                       <img src="/Images/Project-Images/Server-Img.png" alt="Project 1">
-                      <h4>Server 2016</h4>
-                      <p>Click To Check</p>
+                      <h4 align="center">Server 2016</h4>
                   </div>
               </div>
             
@@ -224,32 +232,56 @@
 
      <!-- Certificates Section -->
      <section id="certificates">
-      <div class="container-fluid mb-5">
+      <div class="container-fluid mb-5 certificates">
        
        <section class="customer-logos slider " >
          <div class="slide slide-1 m-2 p-2 ">
-           <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
-           <img src="/Images/Certificates-Images/cert.jpg"></a>
+           <a href="/Images/Certificates-Images/" target="_blank">
+           <img src="/Images/Certificates-Images/Computer Networks Fundamentals.jpg" alt="Certificates"></a>
          </div>
          <div class="slide slide-2 m-2 p-2">
            <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
-           <img src="./Images/Certificates-Images/cert.jpg"></a>
+           <img src="./Images/Certificates-Images/The Complete Computer Basics Course.jpg" alt="Certificates"></a>
          </div>
          <div class="slide slide-1 m-2 p-2">
           <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
-          <img src="./Images/Certificates-Images/cert.jpg"></a>
+          <img src="./Images/Certificates-Images/Secure your IT Systems & Network For Sys Admins + Engineers.jpg" alt="Certificates"></a>
         </div>
         <div class="slide slide-2 m-2 p-2">
           <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
-          <img src="./Images/Certificates-Images/cert.jpg"></a>
+          <img src="./Images/Certificates-Images/Ubuntu Linux for beginners.jpg" alt="Certificates"></a>
         </div>
         <div class="slide slide-1 m-2 p-2">
           <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
-          <img src="./Images/Certificates-Images/cert.jpg"></a>
+          <img src="./Images/Certificates-Images/Cyber Security Awareness Training For Absolute Beginners.jpg" alt="Certificates"></a>
         </div>
         <div class="slide slide-2 m-2 p-2">
           <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
-          <img src="./Images/Certificates-Images/cert.jpg"></a>
+          <img src="./Images/Certificates-Images/CyberSecurity Bootcamp The Ultimate Beginner's Course.jpg" alt="Certificates"></a>
+        </div>
+        <div class="slide slide-1 m-2 p-2">
+          <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
+          <img src="./Images/Certificates-Images/Mastering Network Security Defending Against Cyber Threats.jpg" alt="Certificates"></a>
+        </div>
+        <div class="slide slide-2 m-2 p-2">
+          <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
+          <img src="./Images/Certificates-Images/CSS, Bootstrap, JavaScript And PHP Stack Complete Course.jpg" alt="Certificates"></a>
+        </div>
+        <div class="slide slide-1 m-2 p-2">
+          <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
+          <img src="./Images/Certificates-Images/The Complete MySQL.jpg" alt="Certificates"></a>
+        </div>
+        <div class="slide slide-2 m-2 p-2">
+          <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
+          <img src="./Images/Certificates-Images/Essential Microsoft Excel from Beginner to Advance level.jpg" alt="Certificates"></a>
+        </div>
+        <div class="slide slide-1 m-2 p-2">
+          <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
+          <img src="./Images/Certificates-Images/Advanced Excel Course for Job and Real World.jpg" alt="Certificates"></a>
+        </div>
+        <div class="slide slide-2 m-2 p-2">
+          <a href="/Images/Certificates-Images/cert.jpg" target="_blank">
+          <img src="./Images/Certificates-Images/Power BI Mastery Advanced Data Analytics & Visualizations.jpg" alt="Certificates"></a>
         </div>
        </section>
      </div>
@@ -263,7 +295,7 @@
       <div class="container Paralex-text">
         <div class="row text-center">
           <div class="col-lg-9 col-md-12">
-            <h3>Discover More About Me -  Download My Resume For Insights !</h3>
+            
           </div>
           <div class="col-lg-3 col-md-12 mt-lg-0">
             <a href="Resume.pdf" target="_blank" download><button class="btn btn-outline-danger ml-auto rounded-pill active">Download Resume <span><i class="fa-solid fa-download fa-lg"></i></span></button></a>
@@ -354,15 +386,15 @@
             <form id="contactForm" method="post" action="Thankyou.html">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control rounded-pill" id="name" required>
+                    <input type="text" placeholder="Your Name" class="form-control rounded-pill" id="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control rounded-pill" id="email" required>
+                    <input type="email" class="form-control rounded-pill" id="email" placeholder="Your E-mail" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control rounded-pill" id="message" rows="5" required></textarea>
+                    <textarea placeholder="Your Message"class="form-control rounded-pill" id="message" rows="5" required></textarea>
                 </div>
                 <div class="text-center">
                 <button type="submit" class="btn btn-outline-success btn-lg rounded-pill">Send<span> <i class="fa-regular fa-paper-plane"></i></span></button>
@@ -371,7 +403,17 @@
         </div>
     </section>
 
+    
+    <!-- chatbot Section -->
 
+   
+  <!-- Popup container -->
+  <div id="popup-container">
+  </div>
+
+
+
+  
     <!-- Footer Section -->
     <footer class="text-center py-3">
        <div class="container-fluid">
@@ -416,6 +458,22 @@
 
     <!-- Own Java Script Link-->
     <script src="./JS/main.js"></script>
+
+
+   <!-- IBM Chatbot Script -->
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "c05f3aea-ab69-48cf-981d-4e3fb7471315", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "2f8d22fb-0392-4714-afe6-47e914633949", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
 
 </body>
 

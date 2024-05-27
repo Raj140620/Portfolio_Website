@@ -16,6 +16,8 @@ navBar.forEach(function(a){
 var typed = new Typed('#typed', {
   strings: ['Website Development 🥰','Network Administration 😎','Data Analysis 🤩','Ethical Hacking 🧑‍💻','System Administration ❤️.'],
   typeSpeed: 50,
+  backSpeed: 50,
+  loop: true
 });
 
 // ##### Counter Design #####
