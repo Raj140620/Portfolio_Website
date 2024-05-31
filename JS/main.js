@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded",() =>{
 // ##### Slick Slider Design #####
 $(document).ready(function() {
 $('.customer-logos').slick({
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed:1800,

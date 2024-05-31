@@ -595,3 +595,37 @@ textarea.form-control {
 }
 
 
+
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.blog-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+
