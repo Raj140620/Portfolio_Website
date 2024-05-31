@@ -70,8 +70,8 @@
     </nav>
 
 
-    <section id="home">
     <!-- Header Section -->
+    <section id="home">
       <div class="marquee-container">
         <div class="marquee-text">
           <span>My❤️is for Computer Networking and System Administration , But 🧠 is for Security and Cloud Computing🚀.</span>
@@ -190,6 +190,51 @@
             </div>
           </div>
         </section>
+
+        <!-- Blog Section -->
+     <section class="work-box">
+      <h2 class="mt-5">My Blogs</h2>
+
+      <div class ="container">
+          <div class="row">
+              <div class="col-lg-12">
+               <div class="box-menu">
+                <ul>
+                  <li class="mixtup-control-active" data-filter="*">
+                      All
+                  </li>
+                  <li data-filter=".photo">Photo</li>
+                  <li data-filter=".ui">UI / UX</li>
+                  <li data-filter=".paint">Paint</li>
+                </ul>  
+               </div>   
+              </div>
+          </div>
+          <div class=" row box-list">
+              <div class ="col-lg-4 mix box-item photo paint">
+                  <img src="./Images/Blog-images/image_part_001.jpg" alt="">
+              </div>
+              <div class ="col-lg-4 mix box-item photo paint">
+                  <img src="./Images/Blog-images/image_part_002.jpg" alt="">
+              </div>
+              <div class ="col-lg-4 mix box-item paint">
+                  <img src="./Images/Blog-images/image_part_003.jpg" alt="">
+              </div>
+              <div class ="col-lg-4 mix box-item paint">
+                  <img src="./Images/Blog-images/image_part_004.jpg" alt="">
+              </div>
+              <div class ="col-lg-4 mix box-item ui photo">
+                  <img src="./Images/Blog-images/image_part_001.jpg" alt="">
+              </div>
+              <div class ="col-lg-4 mix box-item ui paint">
+                  <img src="./Images/Blog-images/image_part_002.jpg" alt="">
+              </div>
+              <div class ="col-lg-4 mix box-item ui">
+                  <img src="./Images/Blog-images/image_part_003.jpg" alt="">
+              </div>
+          </div>
+      </div>
+    </section>
 
 
         <!-- Project Section -->
@@ -404,16 +449,11 @@
     </section>
 
     
-    <!-- chatbot Section -->
-
-   
+  
   <!-- Popup container -->
   <div id="popup-container">
   </div>
 
-
-
-  
     <!-- Footer Section -->
     <footer class="text-center py-3">
        <div class="container-fluid">
@@ -448,8 +488,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 
 
-    <!-- Slick Slider Java Script CDN -->
+    <!-- Slick Slider Jquery CDN -->
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" ></script>
+
+
+    <!-- Mixitup Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 
 
     <!-- Bootstrap Script CDN -->
@@ -458,6 +502,14 @@
 
     <!-- Own Java Script Link-->
     <script src="./JS/main.js"></script>
+
+
+    <!-- Mix It Up (Blog)  Script -->
+    <script>
+      $(document).ready(function(){
+          var mixer = mixitup('.box-list');
+      });
+  </script>
 
 
    <!-- IBM Chatbot Script -->
