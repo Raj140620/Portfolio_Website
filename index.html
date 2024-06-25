@@ -81,7 +81,7 @@
           <span>My❤️is for Computer Networking and System Administration , But 🧠 is for Security and Cloud Computing🚀.</span>
         </div>
       </div>
-       <div class="portfolio-banner">
+       <div class="portfolio-banner" id="firefly">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 ">
@@ -657,6 +657,25 @@ $('.firework_button').clickFireworks({
   zIndex: 1000 
   
 });
+});
+</script>
+
+
+ <!-- Firefly CDN AND  JS Script -->
+  <script src="./JS/firefly/jquery.firefly-0.7.js"></script>
+
+
+<script>
+  $.firefly({
+total: 20,
+on:'.portfolio-banner',
+twinkle: 0.1, 
+minPixel: 16,
+maxPixel: 10,
+color: '#dc3545',
+namespace: 'jqueryFireFly',
+borderRadius:'50%',
+
 });
 </script>
 
