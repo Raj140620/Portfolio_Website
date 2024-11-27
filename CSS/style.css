@@ -139,9 +139,11 @@ text-align: center;
   font-weight: bold;
 
 }
+
+
 #about #paragraph {
-  color: #ffffff;
-  background-color: #dc3545;
+  color: #000;
+  /* background-color: #dc3545; */
   border: 5px solid #003853;
   padding: 20px;
   animation: side 3s linear infinite;
@@ -150,7 +152,7 @@ text-align: center;
 }
 
 #about .myself {
-color:#003853;
+color:#dc3545;
 }
 @keyframes side {
   0%,100%{
@@ -215,6 +217,147 @@ color:#003853;
   }
   .skill-name{
     color: #003853;
+  }
+
+
+
+
+
+
+
+
+  .timeline {
+    position: relative;
+    margin: 3rem auto;
+    padding: 2rem 0;
+    max-width: 800px;
+  }
+  
+
+  /* Gray line (background) */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 12px; /* Thicker line */
+    background:#dc3545; /* Initial color for the line */
+    top: 15px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 1150px;
+  }
+
+  /* Red line (animated) */
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .timeline-item .timeline-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 4px solid #003853;
+    border-radius: 50%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc3545;
+    font-size: 18px;
+  }
+  .timeline-content h5{
+      font-weight: bolder;
+      text-align: center;
+      text-decoration: underline solid 4px;
+  }
+
+
+  .timeline-item .timeline-content {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    border: 50px 50px 50px 50px solid rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  
+  }
+  .timeline-item .timeline-content:hover {
+  background: #003853;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  color: #fff;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 55%;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-right: 55%;
+    text-align: left;
+  }
+  
+  .status-icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #28a745; /* Green for completed */
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 4;
+  }
+
+  .timeline-item:first-child .status-icon {
+    background: #fd7e14; /* Orange for pending */
+  }
+
+
+  /* For Small Screens */
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 20px;
+    }
+
+    .timeline::after {
+      left: 20px;
+      
+    }
+
+    .timeline-item .timeline-icon {
+      left: 20px;
+    }
+
+    .timeline-item .timeline-content {
+      margin-left: 50px;
+      margin-right: 50px;
+      max-width: calc(100% - 70px);
+      text-align: left;
+      
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+      margin-left: 50px !important;
+      margin-right: 0 !important;
+    }
   }
 
   /* ##### Service Section ##### */

@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded",() =>{
 })
 
 
+
+
+
 // ##### Slick Slider Design #####
 $(document).ready(function() {
 $('.customer-logos').slick({
@@ -69,20 +72,3 @@ $('.customer-logos').slick({
     ]
   });
 });
-
-
-// // Handling form submission
-// document.getElementById('contactForm').addEventListener('submit', function (event) {
-//   event.preventDefault();
-//   const formData = new FormData(event.target);
-//   const name = formData.get('name');
-//   const email = formData.get('email');
-//   const message = formData.get('message');
-
-//   // Perform validation and send the data to the server or handle it as needed
-//   // Example:
-//   console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-
-//   // Clear form inputs after submission
-//   event.target.reset();
-// });
